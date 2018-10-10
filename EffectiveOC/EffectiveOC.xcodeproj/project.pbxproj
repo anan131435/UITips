@@ -13,6 +13,9 @@
 		7301062F216D91FF006778F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7301062E216D91FF006778F9 /* Assets.xcassets */; };
 		73010632216D91FF006778F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73010630216D91FF006778F9 /* LaunchScreen.storyboard */; };
 		73010635216D91FF006778F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73010634216D91FF006778F9 /* main.m */; };
+		731BFA62216D94CC009631C4 /* HZGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = 731BFA61216D94CC009631C4 /* HZGradView.m */; };
+		731BFA65216D9527009631C4 /* HZGradView+HZGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 731BFA64216D9527009631C4 /* HZGradView+HZGradient.m */; };
+		731BFA68216D9668009631C4 /* UIImage+HZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 731BFA67216D9668009631C4 /* UIImage+HZColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		73010631216D91FF006778F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73010633216D91FF006778F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73010634216D91FF006778F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		731BFA60216D94CC009631C4 /* HZGradView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZGradView.h; sourceTree = "<group>"; };
+		731BFA61216D94CC009631C4 /* HZGradView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZGradView.m; sourceTree = "<group>"; };
+		731BFA63216D9527009631C4 /* HZGradView+HZGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HZGradView+HZGradient.h"; sourceTree = "<group>"; };
+		731BFA64216D9527009631C4 /* HZGradView+HZGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HZGradView+HZGradient.m"; sourceTree = "<group>"; };
+		731BFA66216D9668009631C4 /* UIImage+HZColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HZColor.h"; sourceTree = "<group>"; };
+		731BFA67216D9668009631C4 /* UIImage+HZColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HZColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		73010624216D91FD006778F9 /* EffectiveOC */ = {
 			isa = PBXGroup;
 			children = (
+				731BFA5F216D94B3009631C4 /* View */,
 				73010625216D91FD006778F9 /* AppDelegate.h */,
 				73010626216D91FD006778F9 /* AppDelegate.m */,
 				73010628216D91FD006778F9 /* ViewController.h */,
@@ -69,6 +79,19 @@
 				73010634216D91FF006778F9 /* main.m */,
 			);
 			path = EffectiveOC;
+			sourceTree = "<group>";
+		};
+		731BFA5F216D94B3009631C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				731BFA60216D94CC009631C4 /* HZGradView.h */,
+				731BFA61216D94CC009631C4 /* HZGradView.m */,
+				731BFA63216D9527009631C4 /* HZGradView+HZGradient.h */,
+				731BFA64216D9527009631C4 /* HZGradView+HZGradient.m */,
+				731BFA66216D9668009631C4 /* UIImage+HZColor.h */,
+				731BFA67216D9668009631C4 /* UIImage+HZColor.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +120,7 @@
 		7301061A216D91FD006778F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HZ;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "韩志峰";
 				TargetAttributes = {
@@ -141,9 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				731BFA65216D9527009631C4 /* HZGradView+HZGradient.m in Sources */,
 				7301062A216D91FD006778F9 /* ViewController.m in Sources */,
 				73010635216D91FF006778F9 /* main.m in Sources */,
+				731BFA62216D94CC009631C4 /* HZGradView.m in Sources */,
 				73010627216D91FD006778F9 /* AppDelegate.m in Sources */,
+				731BFA68216D9668009631C4 /* UIImage+HZColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
