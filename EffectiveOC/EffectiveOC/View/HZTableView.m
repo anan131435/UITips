@@ -55,7 +55,25 @@ static NSString *cellIdenftifier = @"cellIdentifier";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return  120;
 }
-
+//按需加载 预加载 停止滚动加载图片 三种优化方式
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
+    //目标行的index
+    NSIndexPath *ip = [self indexPathForRowAtPoint:CGPointMake(0, targetContentOffset->y)];
+    //当前行的index
+    NSIndexPath *cip = [[self indexPathsForVisibleRows] firstObject];
+    NSInteger skipCount = 8;
+    //如果滑动过快，超过指定行，则只加载指定行附近的三行数据
+    if (labs(cip.row - ip.row) > skipCount){
+        NSArray *temp = [self indexPathsForRowsInRect:CGRectMake(0, targetContentOffset->y, self.frame.size.width, self.frame.size.height)];
+        NSMutableArray *arr = [NSMutableArray arrayWithArray:temp];
+        if (velocity.y < 0){ //像下拉
+            
+        }else{//像上划
+            
+        }
+    }
+    
+}
 - (void)loadData{
     
 }
