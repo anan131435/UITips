@@ -16,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSMutableDictionary *aDictionary = [[NSMutableDictionary alloc] initWithCapacity:0];
+    {
+        NSString *aKey = @"akey";
+        NSObject *aObject = [[NSObject alloc] init];
+        [aDictionary setObject:aObject forKey:aKey];
+    }
+    NSLog(@"dictionary: %@", aDictionary);
+    
+   
 }
 
 

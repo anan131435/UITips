@@ -16,6 +16,8 @@
 		731BFA62216D94CC009631C4 /* HZGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = 731BFA61216D94CC009631C4 /* HZGradView.m */; };
 		731BFA65216D9527009631C4 /* HZGradView+HZGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 731BFA64216D9527009631C4 /* HZGradView+HZGradient.m */; };
 		731BFA68216D9668009631C4 /* UIImage+HZColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 731BFA67216D9668009631C4 /* UIImage+HZColor.m */; };
+		73632699217858DE009752FE /* NSString+HZAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 73632698217858DE009752FE /* NSString+HZAdditions.m */; };
+		7363269C21786189009752FE /* HZTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7363269B21786189009752FE /* HZTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		731BFA64216D9527009631C4 /* HZGradView+HZGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HZGradView+HZGradient.m"; sourceTree = "<group>"; };
 		731BFA66216D9668009631C4 /* UIImage+HZColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HZColor.h"; sourceTree = "<group>"; };
 		731BFA67216D9668009631C4 /* UIImage+HZColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HZColor.m"; sourceTree = "<group>"; };
+		73632697217858DE009752FE /* NSString+HZAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HZAdditions.h"; sourceTree = "<group>"; };
+		73632698217858DE009752FE /* NSString+HZAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HZAdditions.m"; sourceTree = "<group>"; };
+		7363269A21786189009752FE /* HZTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTableView.h; sourceTree = "<group>"; };
+		7363269B21786189009752FE /* HZTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,10 @@
 				731BFA64216D9527009631C4 /* HZGradView+HZGradient.m */,
 				731BFA66216D9668009631C4 /* UIImage+HZColor.h */,
 				731BFA67216D9668009631C4 /* UIImage+HZColor.m */,
+				73632697217858DE009752FE /* NSString+HZAdditions.h */,
+				73632698217858DE009752FE /* NSString+HZAdditions.m */,
+				7363269A21786189009752FE /* HZTableView.h */,
+				7363269B21786189009752FE /* HZTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,7 +180,9 @@
 				73010635216D91FF006778F9 /* main.m in Sources */,
 				731BFA62216D94CC009631C4 /* HZGradView.m in Sources */,
 				73010627216D91FD006778F9 /* AppDelegate.m in Sources */,
+				7363269C21786189009752FE /* HZTableView.m in Sources */,
 				731BFA68216D9668009631C4 /* UIImage+HZColor.m in Sources */,
+				73632699217858DE009752FE /* NSString+HZAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
